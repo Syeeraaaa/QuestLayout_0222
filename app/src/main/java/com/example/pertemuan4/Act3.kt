@@ -1,6 +1,7 @@
 package com.example.pertemuan4
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -50,7 +51,15 @@ fun ActivitasPertama(modifier: Modifier){
                 containerColor = colorResource(R.color.card_0_bg)
         )
         ){
+            Row() {
+                val gambar = painterResource(R.drawable.logo_umy)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier.size(100.dp).padding(5.dp)
+                )
 
+            }
         }
     }
 }
